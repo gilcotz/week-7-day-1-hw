@@ -4,7 +4,7 @@ import { makeStyles} from '@material-ui/core/styles';
 // importing pre-built button component
 import Button from '@material-ui/core/Button';
 //import image
-import drone_image from '../../assets/images/skyline.webp'
+import car_image from '../../assets/images/greygtr.webp'
 import {Link} from 'react-router-dom';
 interface Props{
     title: string;
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
         color: 'black'
     },
     main: {
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${drone_image});`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${car_image});`,
         width: '100%',
         height: '100%',
         backgroundSize: 'cover',
@@ -68,7 +68,7 @@ export const Home = (props:Props) =>{
             <nav>
                 <div className={classes.navbar_container}>
                     <h1 className={classes.logo}>
-                        <Link to ='/' className={ `${classes.logo_a} ${classes.logo_navigation}`}>Car Inventory</Link>
+                        <Link to ='/' className={ `${classes.logo_a} ${classes.logo_navigation}`}>Japanese Car Inventory</Link>
                     </h1>
                     <ul className= {`${classes.navigation} ${classes.logo_navigation}`}>
                         <li>
@@ -87,7 +87,7 @@ export const Home = (props:Props) =>{
             <main className={classes.main}>
                 <div className={classes.main_text}>
                 <h1>{props.title}</h1>
-                    <p>Welcome to the Car Inventory</p>
+                    <p>Welcome to the Japanese Car Inventory</p>
                     <Button color='primary' variant="contained">Click Me</Button>
                 </div>
             </main>
